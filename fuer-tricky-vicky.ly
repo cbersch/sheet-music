@@ -1,6 +1,7 @@
 \header {
 	title = "Für Tricky Vicky"
 	composer = "Super Maria"
+  tagline = ""
 }
 upper = \relative c' {
   \clef treble
