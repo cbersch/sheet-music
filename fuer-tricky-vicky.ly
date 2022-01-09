@@ -111,7 +111,7 @@ lower = \relative c {
   <<b1 gis e>>
   <<a c e>>
   <<b1 gis e>>
-  <<a c e>>
+  r4 <<a2. c e>>
  %}
 }
 
