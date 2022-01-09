@@ -7,31 +7,31 @@ upper = \relative c' {
   \clef treble
   \key c \major
   \time 4/4
-  \tempo 4 = 90
+  \tempo 4 = 140
 
   r1 
   c'4 b a r 
   c b a r 
   r8 d c b e8 d c b
-  
+
   d4 e f g
   r4. e8 d e d4~ 
-  
   d8 e8 d e c4. e8 
-  d e b4.
-  e8 d e a,4
-  r2 e'4 d c 
+  d e b4. e8 d e 
+
+  a,4 r2 e'4 
+  d c b4. a8 
+  b a4 a b c8~ 
+  c4 b8 c8 d4. c8 
   
-  b2 a8 b8 a4
-  a b c b8 c8
-  d4 c8 d8 e4 a,
-  c4 b a r 
+  d8 e4 a, c8 b8 a8 
   
-  c b a r 
-  r d c b
-  e d c b
+  r4 c4 b a 
+  d c b
+  e8 d c b
   d e e8 f8 e4
   
+  %{
   d c d r
   c b c r
   b a b r
@@ -56,7 +56,8 @@ upper = \relative c' {
   d c b r
   b8 a~ a2.
   gis8 a~ a2.
-  % \bar "|."
+  \bar "|."
+  %}
 }
 
 lower = \relative c {
@@ -68,22 +69,23 @@ lower = \relative c {
   <<c'2. a f>> <<c'4\staccato a f>>
   <<c'2. a f>> <<c'4\staccato a f>>
   <<d'2 b g>> <<d'2 b g>>
+
   <<d'1 b g>>
   <<c4. e g>> r4. <<g4~ d b>>
   <<g'8 d b>> r4. <<e4. c a>> r8
   r4 <<d4. b g>> r4.
-  <<c2 a f>>
-  <<b2~ gis e>>
-  <<b'1~ gis e>> <<b'4 gis e>> 
-  <<e'2 c a>>
-  r4 <<f4 a c>> r4
-  <<g4 b d>> r4 <<e4 c a>> <<e'4 c a>>
   
-  <<c4 f,>> r2 <<c'4 f,>>
-  <<c'4 f,>> r2 <<c'4 f,>>
-  <<d' g,>> r2.
-  <<d'2~ g,>>
-  <<d'2 g,>>
+  <<c2 a f>><<b2~ gis e>>
+  <<b'1~ gis e>> 
+  <<b'8 gis e>> <<e'2. c a>> <<f8~ a c>> 
+  <<f,4 a c>> r4 <<g4. b d>> r8 
+  
+  r8 <<e4 c a>> <<e'4 c a>> <<c4. f,>> 
+  
+  <<c'4\staccato f,>> <<c'2. f,>> 
+  <<c'4 f,>> <<d' g,>> r2
+  r4 <<d'2. g,>>
+  %{
   <<d'2~ b g>>
   <<d'4 b g>>
   <<c4 e g>>
@@ -112,7 +114,7 @@ lower = \relative c {
   <<b1 gis e>>
   <<a c e>>
   <<b1 gis e>>
-
+ %}
 }
 
 \score {
@@ -125,7 +127,7 @@ lower = \relative c {
     indent = 0.0
   }
   \midi { 
-    \tempo 2 = 90
+    \tempo 2 = 140
   }
 }
 \paper {
