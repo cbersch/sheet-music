@@ -20,7 +20,7 @@ upper = \relative c' {
   d8 e b4. e8 d e 
 
   a,4 r2 e'4 
-  d4 c b4. a16 b16 
+  d4 c b2 a8 b8 
   a4 a b c 
   b8 c8 d4 c8 d8 e4
   
@@ -29,16 +29,15 @@ upper = \relative c' {
   d c b e 
   d c b d~
 
-  d e\staccato e8 f8 e4
+  d e\staccato e8 f8 e4~
+
+  e4 d c d~
+  d4 c4 b 
+  c2 b4 
   
-  %{
-  d c d r
-  c b c r
-  b a b r
-  r e b gis
-  a2
-  b4 gis a2
-  
+  a b4~
+  b2. a4 e'4 b4 gis a2 b4 gis a1
+
   r1 
   c4 b a r 
   c b a r 
@@ -56,6 +55,7 @@ upper = \relative c' {
   d c b r
   b8 a~ a2.
   gis8 a~ a2.
+  b4 a2.
   \bar "|."
   %}
 }
@@ -77,27 +77,27 @@ lower = \relative c {
   
   <<c2 a f>><<b2~ gis e>>
   <<b'1 gis e>> 
-  <<e'2. c a>> <<f4~ a c>>
-  <<f,4 a c>> <<g2 b d>> <<e4 c a>> 
+  r4 <<e'2. c a>> <<f2 a c>>
+  <<g2 b d>> <<e4 c a>> 
   
   <<e'4 c a>> <<e'2 c a>> <<c4\staccato f,>> 
   <<c'2 f,>> <<c'4\staccato f,>> <<d'~ g,>>
-  <<d'2 g,>> r4 <<d'4~ b g>> 
-  <<d'2 b g>> r4 <<d'4~ b g>>
-
-  <<d'4 b g>> <<d'2 b g>> <<g'4 d b>>
-%{ <<g'4\staccato d b>>
+  <<d'2 g,>> r4 <<d'2. b g>> r4 
+  
+  <<d'2. b g>> r4 
+  <<g'2. e c>> r4
+  <<g'4 d b>> r8 <<g'4\staccato d b>>
   r4. <<e4 c a>> r8 <<e'4\staccato c a>>
-  r4. <<d2 b g>>
-  <<b2~ gis e>>
-  <<b'2 gis e>>
-  <<e'2 c a>>
-  r2
-  <<e' c a>>
+  r4. 
+  <<d1 b g>>
+  <<b1 gis e>>
+  <<e'1 c a>>
+  <<e'1 c a>>
+  % zweiter Teil
 
   <<c4 a f>> <<c' a f>> <<c' a f>> <<c' a f>>
-  <<c'2. a f>> <<c'4 a f>>
-  <<c'2. a f>> <<c'4 a f>>
+  <<c'2. a f>> <<c'4\staccato a f>>
+  <<c'2. a f>> <<c'4\staccato a f>>
   <<d'2 b g>> <<d'2 b g>>
   
   <<d'2. b g>> <<g4 e c>>
@@ -111,6 +111,7 @@ lower = \relative c {
   <<b1 gis e>>
   <<a c e>>
   <<b1 gis e>>
+  <<a c e>>
  %}
 }
 
