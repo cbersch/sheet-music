@@ -7,6 +7,7 @@ upper = \relative c' {
   \clef treble
   \key c \major
   \time 4/4
+  \tempo 4 = 90
 
   r1 
   c'4 b a r 
@@ -14,13 +15,12 @@ upper = \relative c' {
   r8 d c b e8 d c b
   
   d4 e f g
-  r2
-  e8 d e d~ d4
+  r4. e8 d e d4~ 
   
-  e8 d e c~ c4
-  e8 d e b~ b4
-  e8 d e a,~ a4
-  r4 e' d c 
+  d8 e8 d e c4. e8 
+  d e b4.
+  e8 d e a,4
+  r2 e'4 d c 
   
   b2 a8 b8 a4
   a b c b8 c8
@@ -56,6 +56,7 @@ upper = \relative c' {
   d c b r
   b8 a~ a2.
   gis8 a~ a2.
+  % \bar "|."
 }
 
 lower = \relative c {
@@ -64,15 +65,14 @@ lower = \relative c {
   \time 4/4
 
   <<c'2 a f>> <<c'2 a f>>
-  <<c'2. a f>> <<c'4 a f>>
-  <<c'2. a f>> <<c'4 a f>>
+  <<c'2. a f>> <<c'4\staccato a f>>
+  <<c'2. a f>> <<c'4\staccato a f>>
   <<d'2 b g>> <<d'2 b g>>
   <<d'1 b g>>
-  <<c2 e g>> r4. <<g8~ d b>> 
-  
-  <<g'4 d b>> r4. <<e8~ c a>> <<e'4 c a>>
-  r4. <<d8~ b g>> <<d'4 b g>> r4
-  r8 <<c8~ a f>> <<c'4 a f>>
+  <<c4. e g>> r4. <<g4~ d b>>
+  <<g'8 d b>> r4. <<e4. c a>> r8
+  r4 <<d4. b g>> r4.
+  <<c2 a f>>
   <<b2~ gis e>>
   <<b'1~ gis e>> <<b'4 gis e>> 
   <<e'2 c a>>
@@ -87,9 +87,9 @@ lower = \relative c {
   <<d'2~ b g>>
   <<d'4 b g>>
   <<c4 e g>>
-  r2 <<g4 d b>> r8 <<g'8 d b>>
-  r2 <<e4 c a>> r8 <<e'8 c a>>
-  r2 <<d2 b g>>
+  r2 <<g4 d b>> r8 <<g'4\staccato d b>>
+  r4. <<e4 c a>> r8 <<e'4\staccato c a>>
+  r4. <<d2 b g>>
   <<b2~ gis e>>
   <<b'2 gis e>>
   <<e'2 c a>>
@@ -125,7 +125,7 @@ lower = \relative c {
     indent = 0.0
   }
   \midi { 
-    \tempo 2 = 80
+    \tempo 2 = 90
   }
 }
 \paper {
