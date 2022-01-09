@@ -85,7 +85,7 @@ lower = \relative c {
   <<d'2 g,>> r4 <<d'4~ b g>> 
   <<d'2 b g>> r4 <<d'4~ b g>>
 
-  <<d'4 b g>> <<c2 e g>> <<g4 d b>>
+  <<d'4 b g>> <<d'2 b g>> <<g'4 d b>>
 %{ <<g'4\staccato d b>>
   r4. <<e4 c a>> r8 <<e'4\staccato c a>>
   r4. <<d2 b g>>
